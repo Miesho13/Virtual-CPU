@@ -1,8 +1,8 @@
 #include "../include/VM_Memory.hpp"
 
-VM::Memory::Memory(size_t memory_size)
+VM::Memory::Memory()
 {
-  this->memory.resize(memory_size);
+  this->memory.resize(64 * 1024);
 }
 
 VM::Memory::~Memory()

@@ -10,7 +10,7 @@ namespace VM
 
   using dword = unsigned int;
 
-  using index = size_t;
+  using index = unsigned int;
 
   using memory_array = std::vector<unsigned char>;
 
@@ -20,7 +20,7 @@ namespace VM
       std::vector<byte> memory;
     
     public:
-      Memory(size_t memory_sizie);
+      Memory();
 
       ~Memory();
 
